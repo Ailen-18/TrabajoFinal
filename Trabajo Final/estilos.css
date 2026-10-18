@@ -1,0 +1,298 @@
+*{
+margin: 10px;
+padding: 10px;
+box-sizing: border-box;
+}
+
+.a{
+    text-decoration: none;
+}
+
+
+body{
+font-family: 'montserrat' sans-serif;
+background-color: white;
+color: black;
+}
+#oscuro{
+  background-color: black;  
+  color: white;
+}
+
+/* es el contenedor "PADRE" abarca todo*/
+.contenedor{
+    display: flex;
+    flex-flow: column nowrap;
+    background: #830478;
+    flex: 2 1 auto;
+    
+}
+
+
+/*El header, tiene dos contenedores: Menú y texto-principal. 
+Menú lleva 3 cajitas, logo, navegacion, social y le puse el boton claro/ oscuro, pero en realidad
+queria poner ese boton en una orilla del header, fuera de este contenedor.
+en el contenedor Texto-principal, esta el nombre del consultorio con un H1 y la imagen de fondo*/
+
+.header{
+    background: url(../imagenes/CONSULTORIOS.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background: #000;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+    background-image: url("../imagenes/fondo.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.menú{
+    background: #6b0606;
+    background:     rgb(90, 2, 2);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px, solid,rgba(255,255,255,.5);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+
+
+.logo{
+   color: #343434; 
+    
+}
+
+
+.d-block{
+width:120px;
+height:100px;
+    object-fit:cover;
+    
+   
+}
+
+
+.nav{
+    background: #ea5455;
+    flex: 1 1 auto;
+  width: 90%;
+  height: 82px;
+   color: #343434;
+}
+
+.nav a{
+    color: #f7f7f7;
+     font-size: 15px;
+    text-transform: uppercase;
+   padding: 0 4px;
+    letter-spacing: 5px; 
+}
+.nav a:hover{
+    color: #343434;
+}
+.social{
+     background: #dbea54;
+    flex: 1 1 auto;
+    width: 40%;
+     height: 82px;
+}
+.social a{
+    font-size:50px;
+    color:#fff;
+    padding: 0 4px;
+     height: 100%;
+     width: 100%;
+    
+}
+.social a:hover{
+color: #343434;
+}
+.texto-principal{
+   
+    height: 200px;
+}
+h1{
+    
+    font-family: 'lora',serif;
+    font-size: 45px;
+    color: #78a5f8;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* En el SECTION, hay 2 contenedores. Un Div en donde se encuentran 2 article. Y un Aside donde hay varios div
+que contiene las publicidades*/
+
+.section{
+    background: #0e027a;
+    display: flex;
+}
+
+.art {
+    background: #02811d;
+    
+    flex: 1 1 65%;
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 0px;
+   
+}
+
+#articulo{
+    background: #8ac4fa;
+   flex: 1 1 45px;
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 0px;
+}
+#ficha{
+     background: #0781f3;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    
+}
+input{
+    width: 60%;
+    font-size: 18px;
+}
+label{
+    width: 50%;
+    font-size: 17px;
+    color: #e9f1a0;
+}
+.article{
+    background: #bb05e9;
+    
+    flex: 1 1 70%;
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 0px;
+
+    }
+.article img{
+    width:100%;
+    margin: auto;
+    width:100%;
+height:100%;
+    object-fit:cover;
+}
+.btn-icon{
+width:30%;
+    
+
+}
+
+
+h4{
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 0;
+    margin-top: 80px;
+    text-align: center;
+}
+h3{
+    font-size: 45px;
+    text-transform: uppercase;
+    padding: 0px 0 10px 0;
+    color: #fff;
+    text-align: center;
+}
+p{
+color: #000;
+    font-size: 23px;
+    padding: 10px 0;
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+.aside{
+    background: #f73f52;
+    flex-flow: row nowrap;
+   flex: 1 1 20%;
+  margin: 10px 10px 0 0px;
+   
+    
+   
+}
+.aside img{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    height: 100%;
+}
+
+.publicidad{
+    background: #ffea85;
+      flex-flow: row nowrap;
+   display: flex;
+   height:23%;
+   margin-top: 37px;
+}
+
+
+/* Tambien tenemos el "FOOTER" para pie de pagina. Al que le falta ponerle contenido,
+como datos de donde se encuentran las sucursales , como un ejemplo simple. asi que se le podria cambiar 
+el nav que le puse , por un parrafo*/
+
+
+
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.pie{
+    background: #e62f29;
+    width: 100%;
+    text-align:10px
+}
+.pie a {
+    color: #fff;
+     text-transform: uppercase;
+      padding: 0  10px ;
+      letter-spacing: 2px;
+}
+
+
+/* estos son los responsives, para que las cajas se acomoden se como agranden la pantalla.
+cuando agrando la pantalla a todo lo que dà, queda mal el Aside,hay que hacer que las cajas de publicidad
+se  adapten en 2 columnas de 2 cajas cada una. Y cuando lo reduzco del todo falta que se adapte en vertical 
+la caja Menú y sus cajitas. tambien elSection deberia hacer que el aside quede debajo de del Div "Art", y 
+footer tambien deberia acortarse, porque se vá se ancho.*/
+
+
+@media all and(max-width:1120px){
+
+.section{flex-direction:column}
+.menú{flex-direction:column;
+height: auto;}
+.aside{display: flex;
+justify-content: center;}
+.texto-principal{height: 450px;}
+h1{font-size: 15px;}}
+
+@media all and(max-width:762px){
+h1{font-size: 15px;}
+.articulos{
+    flex-direction: column;
+}}
+@media all and(max-width:650px){
+.off{display:none}
+.nav a{font-size: 25px;}}
+
+@media all and(max-width:400px){
+.aside{flex-direction: column;
+}}
